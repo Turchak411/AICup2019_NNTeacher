@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AICup2019_NNTeacher", "AICup2019_NNTeacher\AICup2019_NNTeacher.csproj", "{C990F5F6-0B9D-47CB-99B8-1667B85A49FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C990F5F6-0B9D-47CB-99B8-1667B85A49FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C990F5F6-0B9D-47CB-99B8-1667B85A49FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C990F5F6-0B9D-47CB-99B8-1667B85A49FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C990F5F6-0B9D-47CB-99B8-1667B85A49FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {726FEA19-3DD4-4B3C-B840-C2AA7B2822C7}
+	EndGlobalSection
+EndGlobal
