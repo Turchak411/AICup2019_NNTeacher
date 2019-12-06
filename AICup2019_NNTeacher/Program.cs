@@ -9,12 +9,8 @@ namespace AICup2019_NNTeacher
 
         static void Main(string[] args)
         {
-            int trainStartCount = 13821;
-            int trainEndCount = 16420;
-
-            // Для блочного обучения указать:
-            int startDataSetIndex = 0;
-            int endDataSetIndex = 100000;
+            int trainStartCount = 0;
+            int trainEndCount = 100000;
 
             #region Set process settings
 
