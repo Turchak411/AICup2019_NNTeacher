@@ -1,9 +1,9 @@
-﻿using AICup2019_NNTeacher.Model;
-using AICup2019_NNTeacher.Services.WeightGenerator;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
 using System.Text;
+using System.Collections.Generic;
+using AICup2019_NNTeacher.Model;
+using AICup2019_NNTeacher.Services.WeightGenerator;
 
 namespace AICup2019_NNTeacher
 {

@@ -1,11 +1,9 @@
-﻿using AICup2019_NNTeacher.Model;
-using ConsoleProgressBar;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Collections.Generic;
+using ConsoleProgressBar;
+using AICup2019_NNTeacher.Model;
 
 namespace AICup2019_NNTeacher
 {
@@ -68,7 +66,7 @@ namespace AICup2019_NNTeacher
             Console.WriteLine("Learn statistic logs saved in .logs!");
         }
 
-        public void PrintLearnStatistic(int startDataSetIndex, int endDataSetIndex, bool withLogging = false)
+        public void PrintLearnStatistic(bool withLogging = false)
         {
             Console.WriteLine("Start calculating statistic...");
 
@@ -83,7 +81,7 @@ namespace AICup2019_NNTeacher
 
             #endregion
 
-            for (int i = startDataSetIndex; i < endDataSetIndex; i++) //inputDataSets.Count; i++)
+            for (int i = 0; i < inputDataSets.Count; i++)
             {
                 List<double> netResults = new List<double>();
 
@@ -162,8 +160,7 @@ namespace AICup2019_NNTeacher
         /// </summary>
         /// <param name="startIteration"></param>
         /// <param name="withSort"></param>
-        public void TrainNet(int startDataSetIndex, int endDataSetIndex,
-                             int startIteration = 0, bool withSort = false)
+        public void TrainNet(int startIteration = 0)
         {
             #region Load data from file
 
@@ -184,7 +181,7 @@ namespace AICup2019_NNTeacher
                         var learningSpeed = 0.01 * Math.Pow(0.1, iteration / 150000);
                         using (var progress1 = new ProgressBar())
                         {
-                            for (k = startDataSetIndex; k < inputDataSets.Count; k++)
+                            for (k = 0; k < inputDataSets.Count; k++)
                             {
                                 for (int j = 0; j < outputDataSets[k].Length; j++)
                                 {

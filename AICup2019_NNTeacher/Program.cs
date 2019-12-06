@@ -13,8 +13,8 @@ namespace AICup2019_NNTeacher
             int trainEndCount = 16420;
 
             // Для блочного обучения указать:
-            int startDataSetIndex = 296848;
-            int endDataSetIndex = 306848;
+            int startDataSetIndex = 0;
+            int endDataSetIndex = 100000;
 
             #region Set process settings
 
@@ -36,9 +36,9 @@ namespace AICup2019_NNTeacher
                 TestVectors = _fileManager.ReadVectors("inputDataTestPart_temp.txt")
             };
 
-            networkTeacher.TrainNet(startDataSetIndex, endDataSetIndex, trainStartCount);
+            networkTeacher.TrainNet(trainStartCount);
 
-            networkTeacher.PrintLearnStatistic(startDataSetIndex, endDataSetIndex, true);
+            networkTeacher.PrintLearnStatistic(true);
 
             Console.ReadKey();
         }
